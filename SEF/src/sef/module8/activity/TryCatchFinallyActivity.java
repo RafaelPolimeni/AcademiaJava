@@ -4,10 +4,22 @@ package sef.module8.activity;
 //1 - Use try catch appropriately to make sure that the exception is caught and a user friendly message is displayed. 
 
 public class TryCatchFinallyActivity {
+	
 public static void main(String[] args) {
+	
 	TryCatchFinallyActivity obj=new TryCatchFinallyActivity();
 	obj.catchMeIfYouCan();
+	
+	try {
+		
+		
+	} catch (ArrayIndexOutOfBoundsException e) {
+		System.out.println("ERRO! ACESSO A INDEX NEGADO!");
+		// TODO: handle exception
+	}
+	
 }
+	
 
 void catchMeIfYouCan()
 {

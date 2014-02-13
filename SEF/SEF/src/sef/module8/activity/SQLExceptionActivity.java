@@ -19,16 +19,26 @@ public class SQLExceptionActivity {
 			Connection cn = null;
 			
 			try {
-			
+				
 				Class.forName("com.mysql.jdbc.Driver");
 				cn = DriverManager.getConnection(url, user, pass);
 				System.out.println("Connection successfully established! \n");
+				
+			} catch (SQLException e) {
+				System.out.println("Nao foi possivel se conectar!");
+			}
+			catch(ClassNotFoundException e){
+				System.out.println();
+				
+			} catch (Exception e2) {
+				// TODO: handle exception
+			}
+				
 		
-			} catch (ClassNotFoundException e) {
 
 				e.printStackTrace();
 
-			} finally {
+			 finally {
 				
 				cn.close();
 			}

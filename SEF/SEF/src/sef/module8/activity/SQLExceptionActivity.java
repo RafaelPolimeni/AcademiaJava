@@ -38,10 +38,10 @@ public class SQLExceptionActivity {
 				
 		
 
+				e.printStackTrace();
 
 			 finally {
 				
-				 e.printStackTrace();
 				cn.close();
 			}
 			

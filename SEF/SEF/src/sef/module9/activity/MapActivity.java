@@ -17,7 +17,7 @@ public class MapActivity {
 			Map map = new TreeMap();
 			map.put("1", "Rafael");
 			map.put("2", "Ze");
-			
+			map.put("3", "Mane");
 		
 			mapa.print(map);
 			//2 - Call print method to print the map passed as its parameter.

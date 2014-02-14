@@ -15,11 +15,9 @@ public class TryCatchFinallyActivity {
 
 		} catch (ArrayIndexOutOfBoundsException e) {
 
-			System.err
-					.println("O sistema está tentando acessar um index do Array que não existe.");
+			System.err.println("O sistema está tentando acessar um index do Array que não existe.");
 		} finally {
-			System.out
-					.println("This should get printed even if there is an exception");
+			System.out.println("This should get printed even if there is an exception");
 
 		}
 	}

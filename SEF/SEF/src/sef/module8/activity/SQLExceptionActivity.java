@@ -25,21 +25,23 @@ public class SQLExceptionActivity {
 				System.out.println("Connection successfully established! \n");
 				
 			} catch (SQLException e) {
-				System.out.println("Nao foi possivel se conectar!");
+				System.out.println("Nao foi possivel se conectar ao Banco de Dados!");
 			}
 			catch(ClassNotFoundException e){
-				System.out.println();
+				System.out.println("Classe nao localizada");
 				
 			} catch (Exception e2) {
+				
+				System.err.println("ERRO!");
 				// TODO: handle exception
 			}
 				
 		
 
-				e.printStackTrace();
 
 			 finally {
 				
+				 e.printStackTrace();
 				cn.close();
 			}
 			

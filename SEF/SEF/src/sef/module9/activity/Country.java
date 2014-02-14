@@ -39,12 +39,13 @@ public class Country implements Comparable {
 
 	public static void main(String[] Args){
 		
-		List<Country> paises = new ArrayList();
+		List<Country> paises = new ArrayList<>();
 		paises.add(new Country("Brasil", 200000, "America"));
-		paises.add(new Country("Italia", 70000, "Europe"));
+		paises.add(new Country("Italia", 87000, "Europe"));
 		paises.add(new Country("Alemanha",86000, "Europe"));
 		paises.add(new Country("Japao", 1500000, "Asia"));
 		paises.add(new Country ("Marrocos", 460000, "Africa"));
+		paises.add(new Country("Argentina", 80000, "America"));
 		
 		Collections.sort(paises);
 		
